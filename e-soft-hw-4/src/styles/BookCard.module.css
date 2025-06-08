@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("/src/styles/fonts/Roboto-Regular.woff2") format(woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 .bookCard {
     width: 300px;
     height: 300px;
@@ -11,6 +19,7 @@
 }
 
 .container {
+    font-family: "Roboto";
     width: 300px;
     height: 300px;
     border: 1px solid #000;
