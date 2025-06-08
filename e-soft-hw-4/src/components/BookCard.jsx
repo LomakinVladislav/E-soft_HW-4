@@ -7,7 +7,7 @@ function BookCard() {
             <div className={styles.container}>
                 <div>
                     <img 
-                        src="/src/assets/book.png" 
+                        src="/public/book.png" 
                         alt="Обложка"  
                         width={170}
                     />
@@ -20,7 +20,7 @@ function BookCard() {
             </div>
             <button className={styles.favouriteButton}>
                 <img 
-                    src="/src/assets/icon-favourites_black.png" 
+                    src="/public/icon-favourites_black.png" 
                     alt="В избранное" 
                     width={30}
                 />
