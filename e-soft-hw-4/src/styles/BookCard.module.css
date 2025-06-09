@@ -6,11 +6,6 @@
     font-display: swap;
 }
 
-body {
-    display: flex;    
-    justify-content: center;
-}
-
 .cardContainer {
     width: 80vw;
     background-color: deepskyblue;

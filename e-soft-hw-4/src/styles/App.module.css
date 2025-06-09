@@ -1,0 +1,36 @@
+.content {
+    width: 100vw;
+    height: 50vw;
+    display: grid;
+    gap: 5px;
+    min-height: 50vh;
+    grid-template-rows: 15% auto 10%;
+    grid-template-columns: 25% auto ;
+    grid-template-areas: 
+        "header header"
+        "menu catalog"
+        "footer footer"
+    ;
+}
+
+.header {
+    grid-area: header;
+    background-color: pink;
+    width: 100%;
+    position: relative;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: deepskyblue;
+}
+
+.catalog {
+    grid-area: catalog;
+    background-color: green;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: coral;
+}
