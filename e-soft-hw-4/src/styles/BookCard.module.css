@@ -6,38 +6,80 @@
     font-display: swap;
 }
 
+body {
+    display: flex;    
+    justify-content: center;
+}
+
+.cardContainer {
+    width: 80vw;
+    background-color: deepskyblue;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px; 
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
 .bookCard {
-    width: 300px;
+    width: 200px;
     height: 300px;
-    position: relative;
+    border: 1px solid #000000;
+    padding: 15px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 8px; /* Закругленные углы */
+    background-color: #fff;
+    font-family: "Roboto";  
 }
 
-.favouriteButton {
-    position: absolute;
-    top: 5px;
-    right: 5px;
+.bookButton {
+    background-color: #4CAF50; /* Зеленый цвет */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%; 
 }
 
-.container {
-    font-family: "Roboto";
-    width: 300px;
-    height: 300px;
-    border: 1px solid #000;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: end;
-    padding: 10px;
+/* Эффект при наведении на кнопку */
+.bookButton:hover {
+    background-color: #45a049; /* Темно-зеленый */
 }
 
-h1{
-    font-weight: bold;
-    font-size: 20px;
+/* Эффект при нажатии кнопки */
+.bookButton:active {
+    background-color: #3e8e41;
+    transform: translateY(1px);
 }
 
-div {
-    display: flex;
-    gap: 5px;
+/* Обложка книги */
+.bookCover {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px; /* Закругленные углы у изображения */
+}
+
+/* Название книги */
+.bookTitle {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+/* Автор книги */
+.bookAuthor {
+    font-size: 14px;
+    margin: 0 0 15px 0; /* Увеличили отступ снизу для кнопки */
+    color: #666;
 }
