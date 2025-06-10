@@ -1,5 +1,6 @@
-import BookCard from './components/BookCard'
+import PageWrapper from '/src/components/PageWrapper'
 import Header from '/src/components/Header.jsx'
+import SideBar from '/src/components/SideBar';
 import styles from '/src/styles/App.module.css'
 
 function App() {
@@ -8,18 +9,18 @@ function App() {
     <>
     <main className={styles.content}>
       <header className={styles.header}>
-          <Header/>
+        <Header/>
       </header>
       <aside className={styles.menu}>
-        Боковое меню
+        <SideBar/>
       </aside>
 
       <section className={styles.catalog}>
-        Каталог
+        <PageWrapper/>
       </section>
 
       <section className={styles.footer}>
-        О нас
+        <h2>All rights are reserved. </h2> 
       </section>
     </main>
     </>

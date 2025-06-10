@@ -1,11 +1,20 @@
+body {
+    cursor: url('White-Cat-Paw-PNG.png'), auto;
+    overflow-x: hidden;
+}
+
+button {
+    cursor: url('White-Cat-Paw-PNG.png'), auto;
+}
+
 .content {
     width: 100vw;
     height: 50vw;
     display: grid;
     gap: 5px;
     min-height: 50vh;
-    grid-template-rows: 15% auto 10%;
-    grid-template-columns: 25% auto ;
+    grid-template-rows: 15% 80% 5%;
+    grid-template-columns: 25% 75% ;
     grid-template-areas: 
         "header header"
         "menu catalog"
@@ -15,22 +24,31 @@
 
 .header {
     grid-area: header;
-    background-color: pink;
+    background-color: hsl(33, 100%, 88%);
     width: 100%;
     position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .menu {
     grid-area: menu;
-    background-color: deepskyblue;
+    background-color: hsl(32, 62%, 96%);
+    position: relative;
 }
 
 .catalog {
     grid-area: catalog;
-    background-color: green;
+    background-color: hsl(32, 62%, 96%);
+    position: relative;
+    overflow-y: auto;
 }
 
 .footer {
     grid-area: footer;
-    background-color: coral;
+    background-color: hsl(33, 100%, 88%);
+    position: relative;
+    color: black;
+    padding: 10px;
 }
+

@@ -6,19 +6,6 @@
     font-display: swap;
 }
 
-.cardContainer {
-    width: 80vw;
-    background-color: deepskyblue;
-    border-radius: 10px;
-    margin: 20px;
-    display: flex; 
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px; 
-    justify-content: flex-start;
-    box-sizing: border-box;
-}
-
 .bookCard {
     width: 200px;
     height: 300px;
@@ -44,6 +31,7 @@
     cursor: pointer;
     border-radius: 4px;
     width: 100%; 
+    cursor: url('White-Cat-Paw-PNG.png'), auto;
 }
 
 /* Эффект при наведении на кнопку */
