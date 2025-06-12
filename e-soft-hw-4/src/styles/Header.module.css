@@ -1,8 +1,9 @@
 .container {
-    position: fixed;
     display: flex;
+    flex-direction: row;
     justify-content: space-between; /* Горизонтальное центрирование */
     align-items: center;  
+    justify-content: space-around;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -11,6 +12,7 @@
     z-index: 100;
     background-color: bisque;
     color: black;
+    flex-wrap:nowrap;
 }
 
 .name {
@@ -29,7 +31,7 @@
     box-sizing: border-box;
 }
 
-.searchButton {
+.button {
     margin: 3vw;
     background-color: hsl(33, 100%, 88%);
     border: 2px black solid;
@@ -40,39 +42,25 @@
     box-sizing: border-box;
 }
 
-.searchButton:hover {
+.button:hover {
     background-color: hsl(32, 83%, 69%);
     border: 2px black solid;
 }
 
-.searchButton:focus-visible {
+.button:focus-visible {
     background-color: hsl(32, 83%, 69%);
 }
 
-.searchButton:active {
+.button:active {
     background-color: hsl(32, 70%, 51%);
 }
 
-.settingsButton {
-    margin: 3vw;
-    background-color: hsl(33, 100%, 88%);
-    border: 2px black solid;
-    color: black;
-    white-space: nowrap;
-    max-width: 100%;
-    max-height: 100%;
-    box-sizing: border-box;
+.theme-light {
+    background: bisque;
+    color: 222;
 }
-
-.settingsButton:hover {
-    background-color: hsl(32, 83%, 69%);
-    border: 2px black solid;
-}
-
-.settingsButton:focus-visible {
-    background-color: hsl(32, 83%, 69%);
-}
-
-.settingsButton:active {
-    background-color: hsl(32, 70%, 51%);
+  
+.theme-dark {
+    background: #222;
+    color: bisque;
 }

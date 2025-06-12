@@ -9,10 +9,10 @@ button {
 
 .content {
     width: 100vw;
-    height: 50vw;
+    height: 100vh;
     display: grid;
     gap: 5px;
-    min-height: 50vh;
+    min-height: 50vw;
     grid-template-rows: 15% 80% 5%;
     grid-template-columns: 25% 75% ;
     grid-template-areas: 
@@ -31,7 +31,7 @@ button {
     overflow-x: hidden;
 }
 
-.menu {
+.sideBar {
     grid-area: menu;
     background-color: hsl(32, 62%, 96%);
     position: relative;
@@ -52,3 +52,28 @@ button {
     padding: 10px;
 }
 
+* {
+    transition: background-color 0.3s ease, 
+                color 0.3s ease, 
+                border-color 0.3s ease;
+}
+
+.theme-light {
+    background: bisque;
+    color: 222;
+}
+  
+.theme-dark {
+    background: #222;
+    color: bisque;
+}
+
+.theme2-light {
+    background: rgb(254, 242, 227);
+    color: 222;
+}
+  
+.theme2-dark {
+    background: #4f4f4f;
+    color: bisque;
+}

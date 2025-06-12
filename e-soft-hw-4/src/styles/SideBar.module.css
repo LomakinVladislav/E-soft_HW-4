@@ -1,65 +1,40 @@
-/* .selectBox {
-    position: absolute;
-    background-color: hsl(0, 0%, 100%);
-    left: 20%;
-    top: 10%;
-    right: 10%;
-    bottom: 20%;
-    border-radius: 10px;
-    max-height: 30vww;
-} */
-
 .filterPanel {
     border: 1px solid #ddd;
     padding: 15px;
+    margin: 10px;
     border-radius: 5px;
     max-width: 300px;
     color: hsl(0, 0%, 0%);
+    cursor: url('White-Cat-Paw-PNG.png'), auto;
   }
+
   
-  .filterPanel h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-  
-  .authorSearch {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .authorsList {
-    max-height: 300px;
-    overflow-y: auto;
-    margin-bottom: 15px;
-  }
-  
-  .authorItem {
-    display: block;
-    padding: 5px 0;
-    cursor: pointer;
-  }
-  
-  .filterActions {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .filterActions button {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .applyBtn {
-    background: #4CAF50;
-    color: white;
-  }
-  
-  .resetBtn {
-    background: #f44336;
-    color: white;
-  }
+.authorSearch {
+  margin-right: 5px;
+  width: 100%;
+  padding: 3px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: url('White-Cat-Paw-PNG.png'), auto;
+}
+
+
+.authorItem {
+  display: block;
+  padding: 5px 0;
+  cursor: pointer;
+  cursor: url('White-Cat-Paw-PNG.png'), auto;
+}
+
+
+
+.theme-light {
+  background: bisque;
+  color: 222;
+}
+
+.theme-dark {
+  background: #222;
+  color: bisque;
+}

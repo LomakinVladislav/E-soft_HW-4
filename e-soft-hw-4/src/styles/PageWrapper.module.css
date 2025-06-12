@@ -4,3 +4,13 @@
     justify-content: flex-start;
     flex-wrap: wrap;
 }
+
+.theme-light {
+    background: rgb(255, 245, 234);
+    color: 222;
+}
+  
+.theme-dark {
+    background: #4f4f4f;
+    color: bisque;
+}
