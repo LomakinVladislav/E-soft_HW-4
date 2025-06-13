@@ -1,7 +1,7 @@
 export const themes = {
     light: {
-        background: '#e2e2e9',
-        color: '#1b1c1d',
+        background: '#ffe4c4',
+        color: '#000000',
         border: '#1b1c1d 1px solid',
         color_ico: 'black',
         background_card: '#cdcfd1',
@@ -10,7 +10,7 @@ export const themes = {
 
     dark: {
         background: '#1b1c1d', 
-        color: '#e2e2e9',
+        color: '#ffe4c4',
         border: '#e2e2e9 1px solid',
         color_ico: 'white',
         background_card: '#323335',

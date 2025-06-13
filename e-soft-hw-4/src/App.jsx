@@ -9,11 +9,17 @@ import SettingsPage from '/src/components/SettingsPage';
 import BookReader from '/src/components/BookReader';
 import NotFound from '/src/components/NotFound';
 
+import { AppProvider } from './context/AppContext';
+import { TextSettingsProvider } from './context/TextSettingsContext';
+
 import styles from '/src/styles/App.module.css'
+
 function App() {
   const { theme } = useTheme();
 
   return (
+    <AppProvider>
+    <TextSettingsProvider>
     <Router>
       <main className={[styles.content, styles[`theme-${theme}`]].join(' ')}> 
         <header className={`${styles.header} ${styles[`theme-${theme}`]}`}>
@@ -28,10 +34,26 @@ function App() {
                   <PageWrapper/>
                 </section>
               } />
-          <Route path="/book/" element={<BookPage />} />
-          <Route path="/settings" element={<SettingsPage />} />
-          <Route path="/reader/" element={<BookReader />} />
-          <Route path="*" element={ <NotFound/>} />
+          <Route path="/book/:id" element={
+                <section className={`${styles.catalog} ${styles[`theme2-${theme}`]}`}>
+                  <BookPage/>
+                </section>
+              } />
+          <Route path="/settings" element={
+                <section className={`${styles.catalog} ${styles[`theme2-${theme}`]}`}>
+                  <SettingsPage/>
+                </section>
+              } />
+          <Route path="/reader/:id" element={
+                <section className={`${styles.catalog} ${styles[`theme2-${theme}`]}`}>
+                  <BookReader/>
+                </section>
+              } />
+          <Route path="*" element={
+                <section className={`${styles.catalog} ${styles[`theme2-${theme}`]}`}>
+                  <NotFound/>
+                </section>
+              } />
         </Routes>
         
 
@@ -40,6 +62,8 @@ function App() {
         </section>
       </main>
       </Router>
+      </TextSettingsProvider>
+      </AppProvider>
   )
 }
 

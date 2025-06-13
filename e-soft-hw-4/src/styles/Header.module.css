@@ -10,8 +10,8 @@
     right: 0px;
     bottom: 0px;
     z-index: 100;
-    background-color: bisque;
-    color: black;
+    background-color: #ffe4c4;
+    color: #000000;
     flex-wrap:nowrap;
 }
 

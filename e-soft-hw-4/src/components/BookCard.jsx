@@ -13,7 +13,7 @@ function BookCard() {
             <h2 className={`${styles.bookTitle} ${styles[`theme-${theme}`]}`}>Название книги</h2>
 
             <p className={`${styles.bookAuthor} ${styles[`theme-${theme}`]}`}>Автор книги</p>
-            <button className={styles.bookButton}>Добавить в корзину</button>
+            <button className={styles.bookButton}>Добавить в избранное</button>
         </div>
     );
 }

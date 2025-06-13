@@ -16,7 +16,8 @@ export function NotFound(){
     background: currentTheme.background,
     textAlign: 'center',
     padding: '15%',
-    fontSize: '50px'}}>Страница не найдена((</div>
+    color: currentTheme.color,
+    fontSize: '50px'}}>Страница не найдена</div>
     )
 }
 
