@@ -22,6 +22,11 @@
     max-height: 100%;
     box-sizing: border-box;
     font-size: 32px;
+    color: hsl(0, 0%, 0%);
+}
+
+.name:hover {
+    color: inherit;
 }
 
 .input {
