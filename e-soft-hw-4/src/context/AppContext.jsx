@@ -1,12 +1,11 @@
 import { createContext, useContext, useReducer, useMemo } from 'react';
-import booksData from '/src/data/books.json'
+// import booksData from '/src/data/books.json'
 
 const AppContext = createContext();
 
 const getInitialState = () => {
   const savedFavorites = localStorage.getItem('bookFavorites');
   return{
-    books: booksData,
     favorites: savedFavorites ? JSON.parse(savedFavorites) : [],
     searchQuery: '',
     filters: {
